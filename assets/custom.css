@@ -1,0 +1,35 @@
+.centered .about .info {
+  display: inline-flex;
+  position: relative;
+}
+
+.centered .about .info ul {
+  padding: 0.5em;
+}
+
+.centered .about .info ul li {
+  display: list-item;
+  position: relative;
+  font-family: "Fira Mono", monospace;
+}
+
+.centered .about .info ul.key {
+  position: absolute;
+  right: 50%;
+}
+
+.centered .about .info ul.key li {
+  display: block ruby;
+  text-align: right;
+  color: coral;
+}
+
+.centered .about .info ul.value {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+}
+
+.centered .about .info ul.value li {
+  text-align: left;
+}

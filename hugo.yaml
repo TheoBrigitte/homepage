@@ -1,0 +1,33 @@
+baseurl: "https://theobrigitte.com/"
+theme: "hugo-coder"
+languagecode: "en"
+defaultcontentlanguage: "en"
+
+markup:
+  highlight:
+    style: "github-dark"
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  author: "Théo Brigitte"
+  keywords: "developer,personal"
+  colorScheme: "auto"
+  hidecolorschemetoggle: false
+  social:
+  - name: "Github"
+    icon: "fa-brands fa-github fa-2x"
+    weight: 1
+    url: "https://github.com/TheoBrigitte/"
+  - name: "LinkedIn"
+    icon: "fa-brands fa-linkedin fa-2x"
+    weight: 2
+    url: "https://www.linkedin.com/in/th%C3%A9o-brigitte-a4326175/"
+  - name: "Twitter"
+    icon: "fa-regular fa-file-pdf fa-2x"
+    weight: 3
+    url: "https://theobrigitte.com/cv.pdf"
+  customCSS:
+    - custom.css
