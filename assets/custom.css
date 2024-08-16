@@ -8,7 +8,7 @@
 }
 
 .centered .about .info ul li {
-  display: list-item;
+  display: block ruby;
   position: relative;
   font-family: "Fira Mono", monospace;
 }
