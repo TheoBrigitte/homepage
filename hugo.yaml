@@ -13,7 +13,9 @@ markup:
 
 params:
   author: "Théo Brigitte"
-  keywords: "developer,personal"
+  description: "Théo Brigitte's personal website"
+  keywords: "blog,developer,personal"
+  since: 2013
   colorScheme: "auto"
   hidecolorschemetoggle: false
   social:
