@@ -1,101 +1,59 @@
-import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ThemeToggle from "./components/toggle";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex h-screen">
+    <div className="max-w-5xl m-auto">
+    <div className="pl-20 pr-20 text-center">
+      <main>
+        <div className="flex flex-row justify-center text-3xl font-extrabold p-5 space-x-1"><div className="w-1/2 text-right">Théo</div><div className="w-1/2 text-left">Brigitte</div></div>
+        <div className="">Software Engineer since 12+ years. I apply for <a href="https://go.dev/" className="text-blue-500" target="_blank">Go</a> expert and Bash wizard titles. Working mainly with <a href="https://kubernetes.io/" className="text-blue-500" target="_blank">Kubernetes</a>, Grafana, Prometheus/Mimir and Loki. I am a curious mind and a fast learner who likes to solve complex tasks. I also run my own cryptocurrency trading bot using <a href="https://www.freqtrade.io/" className="text-blue-500" target="_blank">freqtrade</a>. And btw I use Arch.</div>
+        <div className="skills flex flex-row text-nowrap p-10 space-x-3 m-auto font-mono">
+          <ul className="w-1/2 text-right key">
+            <li>Profession</li>
+            <li>Experience</li>
+            <li>Languages</li>
+            <li>Cloud provider</li>
+            <li>Orchestration System</li>
+            <li>Observability</li>
+            <li>Pager</li>
+            <li>Web server</li>
+            <li>Version control</li>
+            <li>CI/CD</li>
+            <li>OS</li>
+            <li>Shell</li>
+            <li>Editor</li>
+          </ul>
+          <ul className="w-1/2 text-left value">
+            <li>Software Developer</li>
+            <li>12 years</li>
+            <li>Go, Bash</li>
+            <li>AWS, Azure, GCP, Oracle, OVH</li>
+            <li>Kubernetes</li>
+            <li>Grafana, Prometheus/Mimir, Loki</li>
+            <li>OpsGenie</li>
+            <li>nginx</li>
+            <li>Git</li>
+            <li>FluxCD, Github Actions, CircleCI</li>
+            <li>Arch Linux</li>
+            <li>Zsh + tmux</li>
+            <li>Vim</li>
+          </ul>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      <footer className="p-5 space-x-6">
+        <a href="https://github.com/TheoBrigitte/" target="_blank"><FontAwesomeIcon icon={["fab", "github"]} size="2x" /></a>
+        <a href="https://www.linkedin.com/in/th%C3%A9o-brigitte-a4326175/" target="_blank"><FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" /></a>
+        <a href="https://theobrigitte.com/cv.pdf" target="_blank"><FontAwesomeIcon icon={["far", "file-pdf"]} size="2x" /></a>
       </footer>
+      </div>
+      <div className="pr-20 pb-20 flex flex-row-reverse hover:text-amber-400">
+        <ThemeToggle>
+          <FontAwesomeIcon icon={["fas", "adjust"]} />
+        </ThemeToggle>
+      </div>
+      </div>
     </div>
   );
 }

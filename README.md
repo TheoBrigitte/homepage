@@ -2,14 +2,14 @@
 
 ## Requirements
 
-* Hugo: https://gohugo.io/installation/
+* nodejs and npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 ## Quick Start
 
 ```
 git clone https://github.com/TheoBrigitte/homepage.git
 cd homepage
-hugo server --buildDrafts
+npx next build
 ```
 
 ## Develop
@@ -17,19 +17,19 @@ hugo server --buildDrafts
 Run hugo in server mode and start editing the files.
 
 ```
-hugo server --buildDrafts --cleanDestinationDir
+npm run dev
 ```
 
 ## Build
 
-Build the website in the `public` directory.
+Build the website in the `out` directory.
 
 ```
-hugo --cleanDestinationDir --destination public
+npx next build
 ```
 
 It can then easily be deployed with rsync for instance
 
 ```
-rsync -avP --delete public/ destination/
+rsync -avP --delete out/ destination/
 ```
